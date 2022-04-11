@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sky_striker_app/src/component/counter.dart';
 
 import '../component/calculator.dart';
 import '../component/counter.dart';
