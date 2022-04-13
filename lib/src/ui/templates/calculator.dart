@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'common/outer_border.dart';
+import 'package:sky_striker_app/src/ui/molecules/home_outer_border.dart';
 
 class Calculator extends StatelessWidget {
   const Calculator({Key? key}) : super(key: key);
@@ -17,6 +16,8 @@ class Calculator extends StatelessWidget {
                 );
               });
         },
-        child: const OuterBorder(insertionContents: Text('うまくいった'))));
+        child: const HomeOuterBorder(
+          insertionWidget: Text('電卓コンポーネント'),
+        )));
   }
 }
