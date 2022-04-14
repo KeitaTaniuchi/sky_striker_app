@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sky_striker_app/src/ui/molecules/home_outer_border.dart';
+import 'package:sky_striker_app/src/ui/atoms/app_size_list.dart';
+import 'package:sky_striker_app/src/ui/atoms/outer_border.dart';
 
 class Calculator extends StatelessWidget {
   const Calculator({Key? key}) : super(key: key);
@@ -16,8 +17,9 @@ class Calculator extends StatelessWidget {
                 );
               });
         },
-        child: const HomeOuterBorder(
-          insertionWidget: Text('電卓コンポーネント'),
+        child: const WidthInfinityOuterBorder(
+          borderWidth: AppSizeList.smallBorderWidth,
+          insertionWidget: Center(child: Text('電卓コンポーネント')),
         )));
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sky_striker_app/src/ui/atoms/app_size_list.dart';
-import 'package:sky_striker_app/src/ui/atoms/common_text_button.dart';
+import 'package:sky_striker_app/src/ui/atoms/buttons.dart';
 
 class IncrementButton extends StatelessWidget {
   final action;

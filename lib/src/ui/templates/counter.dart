@@ -8,10 +8,9 @@ class Counter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return (Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: const [
-        NumberMagicGraveyardCounter(),
-        TimesMagicUsedCounter(),
+      children: [
+        Expanded(child: NumberMagicGraveyardCounter()),
+        Expanded(child: TimesMagicUsedCounter()),
       ],
     ));
   }
